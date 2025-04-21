@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class ExcelUtil {
 
-    private static final String FILE_PATH = "InfobloxDropdowns.xlsx";
+    private static final String FILE_PATH = "InfobloxDrop.xlsx";
     private static Workbook workbook = new XSSFWorkbook();
 
     public static String toTitleCase(String input) {

@@ -83,7 +83,7 @@ public static String normalizeSheetName(String sheetName) {
     
 
     public static void saveExcel() {
-        try (FileOutputStream out = new FileOutputStream("ExcelOutput/InfobloxDropdowns.xlsx");
+        try (FileOutputStream out = new FileOutputStream("ExcelOutput/InfobloxDrop.xlsx");
         ) {
             workbook.write(out);
             workbook.close();

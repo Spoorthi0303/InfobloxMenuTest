@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class ExcelUtil {
 
-    private static final String FILE_PATH = "InfobloxDrop.xlsx";
+    private static final String FILE_PATH = "InfobloxDropdowns.xlsx";
     private static Workbook workbook = new XSSFWorkbook();
 
     public static String toTitleCase(String input) {
@@ -83,7 +83,7 @@ public static String normalizeSheetName(String sheetName) {
     
 
     public static void saveExcel() {
-        try (FileOutputStream out = new FileOutputStream("ExcelOutput/InfobloxDrop.xlsx");
+        try (FileOutputStream out = new FileOutputStream("ExcelOutput/InfobloxDropdowns.xlsx");
         ) {
             workbook.write(out);
             workbook.close();
